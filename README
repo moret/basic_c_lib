@@ -1,0 +1,25 @@
+basic C lib
+===========
+
+It's been a long time I don't write in C. So I've written the most basic lib project structure with tests to reuse it for some small experiments. And yes, it's full of the old MS "my_this" and "my_that" to make sure you will get mad at it and rename everything.
+
+:: requirements ::
+
+You need to install Check to run the tests. You can get it at http://check.sourceforge.net, or running the usual brew, apt-get or yum for your platform and install it.
+
+Of course, you need GCC, make and all the basic C libs. Usually a build-essentials package should be enough.
+
+:: how to use ::
+
+I suppose you too will use it to bootstrap other projects. So you should first clone it, detach it from this repository, rename it as you wish and add it to your own git repo. Something like:
+
+git clone git@github.com:moret/basic_c_lib.git
+rm -rf basic_c_lib/.git
+mv basic_c_lib a_cool_lib
+git init a_cool_lib
+
+:: developing ::
+
+Just run make to have the test suite built and executed. After that you're on your own.
+
+Bye!
