@@ -20,6 +20,16 @@ git init a_cool_lib
 
 :: developing ::
 
-Just run make to have the test suite built and executed. After that you're on your own.
+Just run make to have the test suite built and executed.
+
+:: building ::
+
+There is an example using the lib in example/what_is_the_meaning_of_life.c . You should build the lib and compile the example linking it:
+
+make lib
+gcc example/what_is_the_meaning_of_life.c -Lbin/ -Isrc/ -lmy_lib -o bin/what_is_the_meaning_of_life
+bin/what_is_the_meaning_of_life
+
+After that you're on your own.
 
 Bye!
